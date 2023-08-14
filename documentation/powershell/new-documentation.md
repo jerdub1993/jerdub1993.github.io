@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New-CmdletDocumentation
+title: New-Documentation
 categories: powershell
 author:
 - Jeremy Watkins
