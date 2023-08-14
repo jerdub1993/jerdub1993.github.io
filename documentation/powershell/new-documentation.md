@@ -134,7 +134,7 @@ Generates documentation for the MyFunction function and returns the output in Co
 
 
 | Attribute | Value |
-| ---- | ---- |
+| --- | --- |
 | Type | Int32 |
 | Position | named |
 | Default value | 1 |
