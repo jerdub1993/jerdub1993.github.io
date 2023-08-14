@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automating Cmdlet Documentation
+title: New-CmdletDocumentation
 categories: powershell
 author:
 - Jeremy Watkins
