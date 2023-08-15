@@ -34,7 +34,7 @@ plugins:
 
 header_pages:
   - about.md
-  - _posts/index.md
+  - posts/index.md
 
 theme: minima
 minima:
