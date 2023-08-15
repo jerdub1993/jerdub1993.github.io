@@ -35,11 +35,12 @@ plugins:
 theme: minima
 minima:
   social_links:
-    - {platform: github, user_url: "https://github.com/jerdub1993"}
-    #- platform: linkedin
-    #  user_url: "https://www.linkedin.com/in/jeremiah-watkins"
-    #- platform: twitter
-    #  user_url: "https://twitter.com/DevOpsJeremy"
+    - platform: github
+      user_url: "https://github.com/jerdub1993"
+    - platform: linkedin
+      user_url: "https://www.linkedin.com/in/jeremiah-watkins"
+    - platform: twitter
+      user_url: "https://twitter.com/DevOpsJeremy"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
