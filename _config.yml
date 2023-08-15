@@ -14,7 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jeremy
-email: jeremiah.s.watkins@gmail.com
+author:
+  name: Jeremy
+  email: jeremiah.s.watkins@gmail.com
 
 description: >- # this means to ignore newlines until "baseurl:"
 
@@ -24,12 +26,20 @@ twitter_username: jerdub1993
 github_username:  jerdub1993
 
 # Build settings
-markdown: GFM # kramdown
-theme: minima
+markdown: GFM # "Github-Flavored Markdown" ; alternative option: kramdown (using GFM due to kramdown not displaying tables correctly)
 # remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+theme: minima
+minima:
+  social_links:
+    - platform: github
+      user_url: "https://github.com/jerdub1993"
+    - platform: linkedin
+      user_url: "https://www.linkedin.com/in/jeremiah-watkins"
+    #- { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
