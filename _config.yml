@@ -18,7 +18,8 @@ author:
   name: Jeremy
   email: jeremiah.s.watkins@gmail.com
 
-description: >- # this means to ignore newlines until "baseurl:"
+description: >
+  Welcome to my site!
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jerdub1993.github.io" # the base hostname & protocol for your site, e.g. http://example.com
