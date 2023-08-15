@@ -33,9 +33,9 @@ plugins:
   - jekyll-seo-tag
 
 header_pages:
-  - about.md
   - posts/index.md
   - documentation/
+  - about.md
 
 theme: minima
 minima:
