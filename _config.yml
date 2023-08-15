@@ -21,9 +21,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jerdub1993.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jerdub1993
-github_username:  jerdub1993
-linkedin_username: jeremiah-watkins
+#twitter_username: jerdub1993
+#github_username:  jerdub1993
+#linkedin_username: jeremiah-watkins
 
 # Build settings
 markdown: GFM # "Github-Flavored Markdown" ; alternative option: kramdown (using GFM due to kramdown displaying tables different from traditional Markdown)
@@ -35,10 +35,9 @@ plugins:
 theme: minima
 minima:
   social_links:
-    - platform: github
-      user_url: "https://github.com/jerdub1993"
-    - platform: linkedin
-      user_url: "https://www.linkedin.com/in/jeremiah-watkins"
+    - {platform: github, user_url: "https://github.com/jerdub1993"}
+    #- platform: linkedin
+    #  user_url: "https://www.linkedin.com/in/jeremiah-watkins"
     #- platform: twitter
     #  user_url: "https://twitter.com/DevOpsJeremy"
 
