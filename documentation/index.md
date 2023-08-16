@@ -1,6 +1,6 @@
 ---
 title: Documentation
-layout: documentation
+layout: documentation_base
 ---
 # [PowerShell](/documentation/powershell)
 # [Ansible](/documentation/ansible)
