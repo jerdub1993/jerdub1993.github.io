@@ -34,3 +34,9 @@
     overflow:hidden;
     overflow-y:scroll;
 }
+
+.is-vertically-scrollable {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
