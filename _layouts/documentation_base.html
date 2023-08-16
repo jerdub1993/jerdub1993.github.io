@@ -1,33 +1,37 @@
 ---
 layout: base
 ---
-<div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
-    <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column" role="navigation" aria-label="Primary" style="top: 24px; max-height: calc(100vh - 48px);" data-bi-name="left toc">
-        <ul class="tree table-of-contents is-vertically-scrollable flex-grow-1 flex-shrink-1" role="tree" aria-label="Table of contents" data-bi-name="tree" data-is-collapsible="true">
-            <li data-moniker="powershell-5.1 powershell-7.2 powershell-7.3 powershell-7.4 powershell-7.x" class="tree-item is-expanded" aria-setsize="13" aria-level="1" aria-posinset="2" role="treeitem" tabindex="0" id="title-2-1" aria-expanded="true">
-                <span data-bi-name="tree-expander" class="tree-expander">
-                    <span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>
-                    Overview
-                </span>
-                <ul class="tree-group" role="group">
-                    <li role="none">
-                        <a aria-setsize="3" aria-level="2" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3">
-                            What is PowerShell?
-                        </a>
-                    </li>
-                    <li role="none">
-                        <a aria-setsize="3" aria-level="2" aria-posinset="2" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/powershell/scripting/powershell-commands?view=powershell-7.3">\
-                            What is a PowerShell command?
-                        </a>
-                    </li>
-                    <li role="none">
-                        <a aria-setsize="3" aria-level="2" aria-posinset="3" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/powershell/scripting/discover-powershell?view=powershell-7.3">
-                            Discover PowerShell
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+<div class="columns has-large-gaps is-gapless-mobile ">
+    <div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
+        <nav id="affixed-left-container" class="margin-top-sm-tablet position-sticky display-flex flex-direction-column" role="navigation" aria-label="Primary" style="top: 24px; max-height: calc(100vh - 48px);" data-bi-name="left toc">
+            <ul class="tree table-of-contents is-vertically-scrollable flex-grow-1 flex-shrink-1" role="tree" aria-label="Table of contents" data-bi-name="tree" data-is-collapsible="true">
+                <li data-moniker="powershell-5.1 powershell-7.2 powershell-7.3 powershell-7.4 powershell-7.x" class="tree-item is-expanded" aria-setsize="13" aria-level="1" aria-posinset="2" role="treeitem" tabindex="0" id="title-2-1" aria-expanded="true">
+                    <span data-bi-name="tree-expander" class="tree-expander">
+                        <span class="tree-expander-indicator docon docon-chevron-right-light" aria-hidden="true"></span>
+                        Overview
+                    </span>
+                    <ul class="tree-group" role="group">
+                        <li role="none">
+                            <a aria-setsize="3" aria-level="2" aria-posinset="1" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.3">
+                                What is PowerShell?
+                            </a>
+                        </li>
+                        <li role="none">
+                            <a aria-setsize="3" aria-level="2" aria-posinset="2" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/powershell/scripting/powershell-commands?view=powershell-7.3">\
+                                What is a PowerShell command?
+                            </a>
+                        </li>
+                        <li role="none">
+                            <a aria-setsize="3" aria-level="2" aria-posinset="3" role="treeitem" tabindex="-1" class="tree-item is-leaf has-external-link-indicator" data-bi-name="tree-leaf" href="https://learn.microsoft.com/en-us/powershell/scripting/discover-powershell?view=powershell-7.3">
+                                Discover PowerShell
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="right-container" class="right-container is-hidden-mobile column is-two-thirds-tablet is-three-quarters-desktop">
+        {{ content }}
+    </div>
 </div>
-{{ content }}
