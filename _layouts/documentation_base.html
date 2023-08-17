@@ -15,7 +15,9 @@ layout: base
     </div>
     <div id="right-container">
         <p>Using the documentation_base.html layout</p>
-        {{ site.pages }}
+        {%- for page in site.pages -%}
+        <p>{{ page.title }}</p>
+        {%- endfor -%}
         {{ content }}
     </div>
 </div>
