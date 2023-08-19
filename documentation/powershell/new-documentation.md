@@ -1,7 +1,7 @@
 ---
 layout: documentation
 category:
-  - PowerShell
+  - powershell
   - documentation
 ---
 # New-Documentation
