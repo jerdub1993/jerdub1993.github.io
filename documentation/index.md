@@ -1,9 +1,9 @@
 ---
 title: Documentation
-layout: documentation_base
+layout: doc_base
 ---
 {% assign pages = site.pages
-    | where_exp:"item", "item.category contains 'documentation_category'" %}
+    | where_exp:"item", "item.category contains 'doc_category'" %}
 {%- if pages.size > 0 -%}
 {% for indvpage in pages | sort title %}
 ## [{{ indvpage.title }}]({{ indvpage.url | absolute_url }})
