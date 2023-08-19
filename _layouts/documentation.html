@@ -2,9 +2,8 @@
 layout: documentation_base
 ---
 {%
-  assign pages = site.pages
-    | where_exp:"item", "item.path contains 'documentation/powershell/'"
-    | where_exp:"item", "item.path != page.path"
+    assign pages = site.pages
+        | where_exp:"item", "item.dir == page.path"
 %}
 {%- if pages.size > 0 -%}
 <ul>
