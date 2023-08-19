@@ -1,10 +1,3 @@
----
-layout: post
-title: New-Documentation
-categories: powershell
-author:
-- Jeremy Watkins
----
 # New-Documentation
 ## Syntax
 ```powershell
@@ -41,32 +34,32 @@ New-Documentation generates documentation for a cmdlet, function, script, or YAM
 ### Example 1
 ```powershell
 New-Documentation -Name New-Item -OutputType ConfluenceHtml -LoremIpsum
-```
 Generates documentation for New-Item and returns the output in Confluence HTML format. The `-LoremIpsum` switch parameter populates any missing information with filler-text.
+```
 
 ### Example 2
 ```powershell
 Get-Item MyScript.ps1 | New-Documentation -OutputType Markdown
-```
 Generates documentation for the MyScript.ps1 script and returns the output in Markdown format.
+```
 
 ### Example 3
 ```powershell
 Get-Item MyPlaybook.yml | New-Documentation -OutputType ConfluenceWiki -HeadingLevel 2
-```
 Generates documentation for the MyPlaybook.yml YAML file and returns the output in Confluence Wiki markup format, with all headings starting at level 2.
+```
 
 ### Example 4
 ```powershell
 Get-Command Get-Service | New-Documentation -LoremIpsum | Out-File Get-Service.md
-```
 Generates documentation for the Get-Service cmdlet and returns the output in the default format of Markdown. The `-LoremIpsum` switch parameter populates any missing information with filler-text. Outputs the results to the Get-Service.md Markdown file.
+```
 
 ### Example 5
 ```powershell
 Get-Command MyFunction | New-Documentation -OutputType ConfluenceHtml -HeadingLevel 2
-```
 Generates documentation for the MyFunction function and returns the output in Confluence HTML format, with all headings starting at level 2.
+```
 
 ## Parameters
 ### **-Name**
@@ -147,9 +140,11 @@ Generates documentation for the MyFunction function and returns the output in Co
 #### [**SwitchParameter**](https://learn.microsoft.com/en-us/dotnet/api/System.Management.Automation.SwitchParameter)
 #### [**Int32**](https://learn.microsoft.com/en-us/dotnet/api/System.Int32)
 ## Outputs
-#### [**String[]**](https://learn.microsoft.com/en-us/dotnet/api/System.String)
+#### **None**
 ## Notes
+Version: 0.0
 ## Related Links
+- [New-Documentation](https://jerdub1993.github.io/documentation/powershell/new-documentation.html)
 - [Confluence Wiki syntax](https://confluence.atlassian.com/doc/confluence-wiki-markup-251003035.html)
 - [Markdown syntax](https://www.markdownguide.org/cheat-sheet/)
 - [PowerShell Comment-Based Help](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help)
