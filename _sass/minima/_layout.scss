@@ -398,7 +398,7 @@
   position: relative;
 }
 
-.site-nav {
+.documentation-nav {
   position: absolute;
   top: 9px;
   left: $spacing-unit * .5;
@@ -407,7 +407,7 @@
   border-radius: 5px;
   text-align: left;
 
-  .page-link {
+  .doc-page-link {
     color: $text-color;
     line-height: $base-line-height;
     display: block;
@@ -426,7 +426,7 @@
     border: none;
     background-color: inherit;
 
-    .page-link {
+    .doc-page-link {
       display: inline;
       padding: 0;
 
