@@ -1,3 +1,4 @@
+{{ page.excerpt }}
 # New-Documentation
 ## Syntax
 ```powershell
