@@ -388,7 +388,7 @@
 /**
  * Site header
  */
-.documentation-header {
+.site-header {
   border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
@@ -415,7 +415,7 @@
   }
 }
 
-.documentation-nav {
+.site-nav {
   position: absolute;
   top: 9px;
   right: $spacing-unit * .5;
@@ -424,7 +424,7 @@
   border-radius: 5px;
   text-align: right;
 
-  .documentation-trigger {
+  .nav-trigger {
     display: none;
   }
 
