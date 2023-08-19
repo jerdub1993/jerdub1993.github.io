@@ -41,10 +41,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-header_pages:
-  - posts/index.md
-  - documentation/index.md
-  - about.md
+#header_pages:
+#  - posts/index.md
+#  - documentation/index.md
+#  - about.md
 
 theme: minima
 minima:

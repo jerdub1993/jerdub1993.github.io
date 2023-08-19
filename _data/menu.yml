@@ -1,0 +1,7 @@
+headings:
+  - name: Posts
+    url: posts/index.md
+  - name: Documentation
+    url: documentation/index.md
+  - name: About
+    url: about.md
