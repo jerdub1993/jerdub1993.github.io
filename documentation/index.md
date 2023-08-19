@@ -1,4 +1,4 @@
 ---
 title: Documentation
 ---
-# [PowerShell](/documentation/powershell)
+# [PowerShell Documentation](/documentation/powershell)
