@@ -1,4 +1,8 @@
-{{ page.excerpt }}
+---
+category:
+  - powershell
+  - documentation
+---
 # New-Documentation
 ## Syntax
 ```powershell
