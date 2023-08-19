@@ -4,7 +4,8 @@ layout: documentation_base
 {% assign lower_title = page.title | downcase %}
 {% assign pages = site.pages
     | where_exp:"item", "item.category contains 'documentation'"
-    | where_exp:"item", "item.category contains lower_title" %}
+    | where_exp:"item", "item.category contains lower_title" 
+    | sort %}
 {%- if pages.size > 0 -%}
 <ul>
 {% for indvpage in pages %}

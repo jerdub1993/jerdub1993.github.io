@@ -3,7 +3,8 @@ title: Documentation
 layout: documentation_base
 ---
 {% assign pages = site.pages
-    | where_exp:"item", "item.category contains 'documentation_category'" %}
+    | where_exp:"item", "item.category contains 'documentation_category'"
+    | sort %}
 {%- if pages.size > 0 -%}
 {% for indvpage in pages %}
 ## [{{ indvpage.title }}]({{ indvpage.url | absolute_url }})
