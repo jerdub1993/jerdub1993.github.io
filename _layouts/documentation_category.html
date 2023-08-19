@@ -4,11 +4,10 @@ layout: documentation_base
 {% assign lower_title = page.title | downcase %}
 {% assign pages = site.pages
     | where_exp:"item", "item.category contains 'documentation'"
-    | where_exp:"item", "item.category contains lower_title" 
-    | sort %}
+    | where_exp:"item", "item.category contains lower_title" %}
 {%- if pages.size > 0 -%}
 <ul>
-{% for indvpage in pages %}
+{% for indvpage in pages | sort %}
 <li><a href="{{ indvpage.url | absolute_url }}">{{ indvpage.title }}</a></li>
 {%- endfor %}
 </ul>
