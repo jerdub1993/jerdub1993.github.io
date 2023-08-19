@@ -3,5 +3,8 @@ headings:
     url: posts/index.md
   - name: Documentation
     url: documentation/index.md
+    children:
+      - name: PowerShell
+        url: documentation/powershell/index.md
   - name: About
     url: about.md
