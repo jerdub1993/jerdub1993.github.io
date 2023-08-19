@@ -2,7 +2,7 @@
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign page_headings = site.data.menu.headings -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
@@ -18,10 +18,20 @@
         </label>
 
         <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- for heading in page_headings -%}
+            {%- if heading.name -%}
+              {%- if heading.children -%}
+              <div class="dropdown">
+                <a class="page-link" href="{{ heading.url | relative_url }}">{{ heading.name | escape }}</a>
+                <div class="dropdown-content">
+                  {%- for child in heading.children -%}
+                  <a href="{{ child.url }}">{{ child.name }}</a>
+                  {%- endfor -%}
+                </div>
+              </div>
+              {%- else -%}
+              <a class="page-link" href="{{ heading.url | relative_url }}">{{ heading.name | escape }}</a>
+              {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
         </div>
