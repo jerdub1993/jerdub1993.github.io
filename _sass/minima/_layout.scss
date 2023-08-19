@@ -489,7 +489,7 @@
     padding: 5px 10px;
 
     // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
+    &:not(:first-child) {
       margin-left: 0;
     }
     margin-right: 20px;
@@ -517,7 +517,7 @@
       display: inline;
       padding: 0;
 
-      &:not(:last-child) {
+      &:not(:first-child) {
         margin-left: 20px;
       }
       margin-right: auto;
