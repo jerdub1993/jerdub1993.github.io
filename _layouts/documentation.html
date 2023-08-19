@@ -3,7 +3,7 @@ layout: documentation_base
 ---
 {%
     assign pages = site.pages
-        | where_exp:"item", "item.dir == page.path"
+        | where_exp:"item", "item.category == 'documentation_category'"
 %}
 {%- if pages.size > 0 -%}
 <ul>
