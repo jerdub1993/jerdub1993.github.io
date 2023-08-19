@@ -415,9 +415,9 @@
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-left: 0;
+      margin-right: 20px;
     }
-    margin-right: 20px;
+    margin-left: 0;
   }
 
   @media screen and (min-width: $on-medium) {
@@ -431,9 +431,9 @@
       padding: 0;
 
       &:not(:last-child) {
-        margin-left: 20px;
+        margin-right: auto;
       }
-      margin-right: auto;
+      margin-left: 20px;
     }
   }
 }
