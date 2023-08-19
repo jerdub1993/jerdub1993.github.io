@@ -419,21 +419,4 @@
     }
     margin-left: 0;
   }
-
-  @media screen and (min-width: $on-medium) {
-    position: static;
-    float: left;
-    border: none;
-    background-color: inherit;
-
-    .doc-page-link {
-      display: inline;
-      padding: 0;
-
-      &:not(:last-child) {
-        margin-right: auto;
-      }
-      margin-left: 20px;
-    }
-  }
 }
