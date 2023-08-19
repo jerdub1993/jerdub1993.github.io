@@ -1,14 +1,4 @@
 ---
 layout: documentation_base
 ---
-{% assign pages = site.pages
-    | where_exp:"item", "item.category == 'documentation_category'" %}
-{%- if pages.size > 0 -%}
-<ul>
-{% for page in pages %}
-::marker
-<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
-{%- endfor %}
-</ul>
-{%- endif -%}
 {{ content }}

@@ -1,4 +1,11 @@
 ---
 title: Documentation
-layout: documentation
+layout: documentation_base
 ---
+{% assign pages = site.pages
+    | where_exp:"item", "item.category contains 'documentation_category'" %}
+{%- if pages.size > 0 -%}
+{% for page in pages %}
+- [{{ page.title }}]({{ page.url | absolute_url }})
+{%- endfor %}
+{%- endif -%}

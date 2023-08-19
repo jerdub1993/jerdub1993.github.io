@@ -1,4 +1,5 @@
 ---
+layout: documentation
 category:
   - powershell
   - documentation
