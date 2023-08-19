@@ -3,7 +3,7 @@ layout: documentation_base
 ---
 {% assign pages = site.pages
     | where_exp:"item", "item.category contains 'documentation'"
-    | where_exp:"item", "item.category contains page.title" %}
+    | where_exp:"item", "item.category contains page.title | downcase" %}
 {%- if pages.size > 0 -%}
 <ul>
 {% for indvpage in pages %}
