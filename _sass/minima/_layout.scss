@@ -531,33 +531,4 @@
     margin-right: 20px;
   }
   */
-
-  @media screen and (min-width: $on-medium) {
-    position: static;
-    float: left;
-    border: none;
-    background-color: inherit;
-
-    label[for="doc-nav-trigger"] {
-      display: none;
-    }
-
-    .doc-menu-icon {
-      display: none;
-    }
-
-    input ~ .doc-trigger {
-      display: block;
-    }
-
-    .doc-page-link {
-      display: inline;
-      padding: 0;
-
-      &:not(:first-child) {
-        margin-left: 20px;
-      }
-      margin-right: auto;
-    }
-  }
 }
