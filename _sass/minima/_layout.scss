@@ -462,9 +462,9 @@
     padding: 5px 10px;
 
     &:not(:first-child) {
-      margin-left: 20px;
+      margin-left: 0;
     }
-    margin-right: auto;
+    margin-right: 20px;
   }
 
   /*
