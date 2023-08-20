@@ -430,7 +430,7 @@
 .doc-header {
   border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
-  /*min-height: $spacing-unit * 1.865;*/
+  min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   // Positioning context for the mobile navigation icon
@@ -455,43 +455,12 @@
   border: none;
   background-color: inherit;
 
-
-  .doc-nav-trigger {
-    display: none;
-  }
-
-  .doc-menu-icon {
-    float: left;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center;
-
-    > svg path {
-      fill: $border-color-03;
-    }
-  }
-
-
-  label[for="doc-nav-trigger"] {
-    display: none;
-  }
-
-  .doc-menu-icon {
-    display: none;
-  }
-
-  .doc-trigger {
-    display: block;
-  }
-
   .doc-page-link {
     color: $text-color;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
-    
+
     &:not(:first-child) {
       margin-left: 20px;
     }
