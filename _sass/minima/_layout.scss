@@ -487,8 +487,10 @@
   }
 
   .doc-page-link {
-    display: inline;
-    padding: 0;
+    color: $text-color;
+    line-height: $base-line-height;
+    display: block;
+    padding: 5px 10px;
 
     &:not(:first-child) {
       margin-left: 20px;
