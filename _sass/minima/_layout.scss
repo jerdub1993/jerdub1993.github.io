@@ -463,6 +463,30 @@
     }
   }
 
+
+  label[for="doc-nav-trigger"] {
+    display: none;
+  }
+
+  .doc-menu-icon {
+    display: none;
+  }
+
+  .doc-trigger {
+    display: block;
+  }
+
+  .doc-page-link {
+    display: inline;
+    padding: 0;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+    margin-right: auto;
+  }
+
+  /*
   label[for="doc-nav-trigger"] {
     display: block;
     float: left;
@@ -494,6 +518,7 @@
     }
     margin-right: 20px;
   }
+  */
 
   @media screen and (min-width: $on-medium) {
     position: static;
